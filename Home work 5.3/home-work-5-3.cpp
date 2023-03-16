@@ -10,7 +10,7 @@ int main() {
 
 	int a[100][100], n, m;
 	printf("Размерность массива: ");
-	scanf_s("%i %i", &n, &m);
+	scanf("%i %i", &n, &m);
 	srand(time(NULL));
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {

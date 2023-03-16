@@ -8,11 +8,11 @@ int main() {
 
 	int a[100][100], n, m;
 	printf("Размерность массива: ");
-	scanf_s("%i %i", &n, &m);
+	scanf("%i %i", &n, &m);
 	printf("Введите числа: ");
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
-			scanf_s("%i", &a[i][j]);
+			scanf("%i", &a[i][j]);
 		}
 	}
 	printf("Введенный массив:\n");
