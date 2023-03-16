@@ -9,7 +9,7 @@ int main() {
 	int a[7];
 	printf("Введите 7 чисел: ");
 	for (int i = 0; i < 7; i++) {
-		scanf_s("%i", &a[i]);
+		scanf("%i", &a[i]);
 	}
 	for (int i = 0; i < 7; i++) {
 		printf("a[%i] = %i\n", i, a[i]);

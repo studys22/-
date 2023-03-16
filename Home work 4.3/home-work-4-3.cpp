@@ -20,10 +20,10 @@ int main() {
 
 	int a[100], n;
 	printf("Количество чисел: ");
-	scanf_s("%i", &n);
+	scanf("%i", &n);
 	printf("Введите числа: ");
 	for (int i = 0; i < n; i++) {
-		scanf_s("%i", &a[i]);
+		scanf("%i", &a[i]);
 	}
 	bubleSort(a, n);
 	printf("Отсортированные числа:");

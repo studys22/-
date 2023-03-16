@@ -7,13 +7,13 @@ int main() {
 	setlocale(LC_ALL, "ru-RU");
 
 	int a[1000], n;
-	printf("Количество чисел: ");
-	scanf_s("%i", &n);
-	printf("Введите числа: ");
+	printf("РљРѕР»РёС‡РµСЃС‚РІРѕ С‡РёСЃРµР»: ");
+	scanf("%i", &n);
+	printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Р°: ");
 	for (int i = 0; i < n; i++) {
-		scanf_s("%i", &a[i]);
+		scanf("%i", &a[i]);
 	}
-	printf("Введённые числа:");
+	printf("Р’РІРµРґС‘РЅРЅС‹Рµ С‡РёСЃР»Р°:");
 	for (int i = 0; i < n; i++) {
 		printf(" %i", a[i]);
 	}
