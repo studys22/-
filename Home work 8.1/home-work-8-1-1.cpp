@@ -5,6 +5,19 @@
 #include <stdlib.h>
 #include <string.h>
 
+char* itoa_(int val, int base){
+	
+	static char buf[32] = {0};
+	
+	int i = 30;
+	
+	for(; val && i ; --i, val /= base)
+	
+		buf[i] = "0123456789abcdef"[val % base];
+	
+	return &buf[i+1];
+	
+}
 enum Sex {
     male,
     female
@@ -44,13 +57,12 @@ public:
     char* afterYear() {
         age++;
         weight += rand() % 10 - 5;
-        char* res;
+        char* res = (char*)malloc(101);
         strcat(res, name);
         strcat(res, ". Age: ");
-        char t[3];
-        strcat(res, itoa(age, t, 10));
+        strcat(res, itoa_(age, 10));
         strcat(res, ". Weight: ");
-        strcat(res, itoa(weight, t, 10));
+        strcat(res, itoa_(weight, 10));
         strcat(res, ". Sex: ");
         strcat(res, sex == male ? "male" : "female");
         return res;  
